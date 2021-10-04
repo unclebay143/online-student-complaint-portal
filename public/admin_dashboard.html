@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./../assets/css/utilities.css" />
+  <link rel="stylesheet" href="./../assets/css/report.css" />
+  <link rel="stylesheet" href="./../assets/css/dashboard.css" />
+  <link rel="stylesheet" href="./../assets/css/admin_received_reports.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <title>Report</title>
+</head>
+
+<body>
+  <main>
+    <aside class="side-menu">
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <!-- <a href="./admin_dashboard.html">Admin</a> -->
+      <a href="./registered_students.html">Students</a>
+      <a href="#" class="active">Complains</a>
+      <a href="#" onclick="adminLogout()">Logout</a>
+    </aside>
+
+    <section class="admin_report">
+      <div class="heading">
+        <h1>
+          Welcome back,
+          <span class="admin-name-holder">admin</span>
+        </h1>
+        <p class="pending-report-stat"></p>
+      </div>
+      <table>
+        <tr>
+          <th># Report ID</th>
+          <th>Reporter</th>
+          <th>Complain</th>
+          <th>Type</th>
+          <th>Phone Number</th>
+          <th>Status</th>
+          <th>Update Status</th>
+        </tr>
+        <tbody class="received-reports"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="./../assets/js/common.js"></script>
+  <script src="./../assets/js/admin_received_reports.js"></script>
+  <script src="./../assets/js/admin_feedback.js"></script>
+</body>
+
+</html>

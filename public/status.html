@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./../assets/css/utilities.css" />
+  <link rel="stylesheet" href="./../assets/css/dashboard.css" />
+  <link rel="stylesheet" href="./../assets/css/status.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <title>Report Status</title>
+</head>
+
+<body>
+  <main>
+    <aside class="side-menu">
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./report.html">Report</a>
+      <a href="#" class="active">Status</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </aside>
+
+    <section class="status">
+      <h1>
+        <span class="user-name-holder">2018/122712cs</span>
+      </h1>
+
+      <div class="stats">
+        <p class="pending-report-stat"></p>
+        <!-- <p>You don't have any feedback yet</p> -->
+        <div class="reports">
+          <table>
+            <tr>
+              <th># Report ID</th>
+              <th>Reporter</th>
+              <th>Complain</th>
+              <th>Type</th>
+              <th>Phone Number</th>
+              <th>Feedback</th>
+              <th>Status</th>
+            </tr>
+            <tbody class="reports-made"></tbody>
+          </table>
+          <!-- loader -->
+          <div class="loader"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./../assets/js/status.js"></script>
+  <script src="./../assets/js/common.js"></script>
+</body>
+
+</html>

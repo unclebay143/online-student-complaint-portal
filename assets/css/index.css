@@ -1,0 +1,80 @@
+main {
+  padding: 1rem 0;
+  font-family: var(--app-primary--font);
+  min-height: 100vh;
+}
+
+#how-it-works h1 {
+  padding: 2.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 3rem;
+  padding-top: 2rem;
+}
+
+.card-row .card-body {
+  text-align: center;
+  margin: 0 auto;
+  width: 85%;
+  padding: 2rem;
+  text-decoration: none;
+  color: var(--app-color-white);
+  font-size: 0.8rem;
+  line-height: 2;
+  background-image: var(--app-linear-bg-3);
+  border-radius: 10px;
+  box-shadow: 2px 3.5px 11px 0px rgb(0 0 0 / 20%);
+}
+
+.card-body:nth-child(1) {
+  background-image: var(--app-linear-bg-3);
+}
+.card-body:nth-child(2) {
+  background-image: var(--app-linear-bg-3);
+}
+.card-body:nth-child(3) {
+  background-image: var(--app-linear-bg-2);
+}
+
+.card-body svg {
+  margin: 1rem;
+}
+
+.card-body h2 {
+  margin-bottom: 1rem;
+}
+
+.card-body .card-btn {
+  padding: 2.33% 5%;
+  border: none;
+  background-color: var(--app-color-white);
+  box-shadow: 2px 3.5px 11px 0px rgb(0 0 0 / 20%);
+  border-radius: 35px;
+  font-weight: 700;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  main {
+    padding: 3rem 0;
+  }
+  .card-row {
+    flex-direction: row;
+  }
+
+  .card-row .card-body {
+    width: 25%;
+  }
+
+  #how-it-works h1 {
+    text-align: left;
+    font-size: 2rem;
+  }
+}

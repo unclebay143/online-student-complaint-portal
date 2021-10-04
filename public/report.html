@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./../assets/css/utilities.css" />
+  <link rel="stylesheet" href="./../assets/css/report.css" />
+  <link rel="stylesheet" href="./../assets/css/dashboard.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <title>Report</title>
+</head>
+
+<body>
+  <main>
+    <aside class="side-menu">
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="#" class="active">Report</a>
+      <a href="./status.html">Status</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </aside>
+
+    <section class="report">
+      <div class="warning">
+        <h1>READ BEFORE FILING COMPLAINT</h1>
+        <p>
+          The information I will be providing on this platform would be
+          correct to the best of my knowledge and I acknowledge that providing
+          any false information shall make me liable to Penal actions under
+          the polytechnic laws.
+        </p>
+      </div>
+      <!-- form -->
+      <form onsubmit="return false">
+        <div class="input-wrapper">
+          <input type="text" placeholder="Name" id="reporter-name" required readonly disabled="true" />
+        </div>
+        <div class="input-wrapper">
+          <input type="email" placeholder="Email" id="reporter-email" required />
+        </div>
+        <div class="input-wrapper">
+          <input type="tel" placeholder="Phone number" id="reporter-num" maxlength="11" required />
+        </div>
+        <div class="input-wrapper">
+          <input type="text" placeholder="Address" id="reporter-address" required />
+        </div>
+        <div class="input-wrapper">
+          <select name="report-type" id="report-type">
+            <option value="Abuse">Abuse</option>
+            <option value="Result">Result</option>
+            <option value="Lodge">Lodge</option>
+            <option value="Fighting">Fighting</option>
+            <option value="Attack">Attack</option>
+            <option value="Payment">Payment</option>
+          </select>
+        </div>
+
+        <!--  -->
+
+        <div class="input-wrapper">
+          <textarea placeholder="File Complaint (description)" id="report-message"></textarea>
+        </div>
+        <div class="input-wrapper">
+          <button id="report-submit-btn">Submit</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="./../assets/js/report.js"></script>
+  <script src="./../assets/js/common.js"></script>
+</body>
+
+</html>

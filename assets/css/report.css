@@ -1,0 +1,74 @@
+.report {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.report .warning {
+  text-align: center;
+  width: 50%;
+  line-height: 2;
+}
+
+.warning h1 {
+  color: red;
+}
+
+.report form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.report form .input-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  width: 80%;
+}
+
+.input-wrapper input,
+.input-wrapper select,
+.input-wrapper textarea {
+  width: 100%;
+  padding: 0.9rem;
+  font-family: var(--app-secondary--font);
+  font-weight: 600;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  text-transform: capitalize;
+}
+
+.input-wrapper textarea {
+  height: 100px;
+  resize: none;
+}
+
+.input-wrapper button {
+  width: 100%;
+  padding: 12px 32px;
+  font-size: 19px;
+  background-color: var(--app-primary-color);
+  color: var(--app-color-white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .report .warning {
+    text-align: center;
+    width: 90%;
+    line-height: 2;
+  }
+
+  .report form .input-wrapper {
+    width: 100%;
+  }
+}

@@ -1,0 +1,45 @@
+.status {
+  padding: 3rem;
+  min-height: 100vh;
+  font-family: var(--app-primary--font);
+  width: 100%;
+}
+
+.status .stats {
+  margin-top: 2rem;
+}
+
+.stats p {
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+.reports {
+  margin-top: 3rem;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  cursor: pointer;
+}
+
+tr:hover {
+  background-color: #ccc;
+}
+
+td,
+th {
+  border: 1px solid #5c0f8b;
+  text-align: left;
+  padding: 8px;
+  text-transform: capitalize;
+}
+
+tr:nth-child(even) {
+  /* background-color: #603679; */
+}

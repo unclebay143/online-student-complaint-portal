@@ -1,0 +1,24 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  font-family: var(--app-primary--font);
+}
+
+main h1 {
+  margin: 1rem;
+  color: var(--app-primary-color);
+}
+
+main p {
+  font-weight: 600;
+  margin: 1rem;
+}
+
+main a {
+  font-weight: 700;
+  color: var(--app-tertiary-color);
+  text-transform: capitalize;
+}

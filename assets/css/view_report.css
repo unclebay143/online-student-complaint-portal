@@ -1,0 +1,49 @@
+.report-body {
+  border: 1px solid var(--app-primary-color);
+  height: auto;
+  border-radius: 5px;
+  padding: 0.8rem;
+}
+
+.report-body h4 {
+  color: #3b1353;
+  margin: 1rem 0;
+  font-size: 15px;
+}
+
+.report-body h4 .info {
+  color: #020202;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.report-transaction {
+  margin-top: 2rem;
+}
+
+.report-transaction textarea {
+  resize: none;
+  width: 100%;
+  padding: 0.5rem;
+  height: 8rem;
+  outline: none;
+  font-size: 15px;
+  font-family: var(--app-secondary--font);
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.feedback-btn {
+  text-transform: capitalize;
+  font-size: 15px;
+  background-color: #3b1353;
+  border: none;
+  color: white;
+  padding: 9px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedback-btn:hover {
+  opacity: 0.85;
+}

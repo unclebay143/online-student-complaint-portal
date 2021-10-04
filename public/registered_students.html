@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../assets/css/utilities.css" />
+    <link rel="stylesheet" href="./../assets/css/report.css" />
+    <link rel="stylesheet" href="./../assets/css/dashboard.css" />
+    <link rel="stylesheet" href="./../assets/css/admin_received_reports.css" />
+    <title>Report</title>
+  </head>
+  <body>
+    <main>
+      <aside class="side-menu">
+        <!-- <a href="./admin_dashboard.html">Admin</a> -->
+        <a href="#" class="active">Students</a>
+        <a href="./admin_dashboard.html">Complains</a>
+        <a href="#" onclick="adminLogout()">Logout</a>
+      </aside>
+
+      <section class="admin_report">
+        <div class="heading">
+          <h1>
+            Welcome back,
+            <span class="admin-name-holder">admin</span>
+          </h1>
+          <p class="pending-report-stat"></p>
+        </div>
+        <table>
+          <tr>
+            <th>S/N</th>
+            <th>Matric</th>
+            <th>Fullname</th>
+          </tr>
+          <tbody class="received-reports registered_students"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="./../assets/js/common.js"></script>
+    <script src="./../assets/js/registered_students_stats.js"></script>
+  </body>
+</html>

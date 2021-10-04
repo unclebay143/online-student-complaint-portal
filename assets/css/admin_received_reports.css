@@ -1,0 +1,47 @@
+.admin_report {
+  min-height: 100vh;
+  padding: 3rem;
+  width: 100%;
+}
+
+.admin_report .heading {
+  line-height: 2;
+  margin-bottom: 3rem;
+}
+
+.admin_report .heading h1 {
+  text-transform: capitalize;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  cursor: pointer;
+}
+
+tr:hover {
+  background-color: #ccc;
+}
+
+td,
+th {
+  border: 1px solid #5c0f8b;
+  text-align: left;
+  padding: 8px;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+/* tr:nth-child(even) {
+  background-color: #603679;
+} */
+
+.status-dropdown {
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+}

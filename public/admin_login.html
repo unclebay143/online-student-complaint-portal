@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../assets/css/admin_login.css" />
+    <link rel="stylesheet" href="./../assets/css/utilities.css" />
+    <title>Admin Login</title>
+  </head>
+  <body>
+    <main>
+      <form onsubmit="return false">
+        <h3>Admin Portal</h3>
+        <p class="message"></p>
+        <div class="input-wrapper">
+          <label> Admin ID </label>
+          <input type="text" id="admin_id" required />
+        </div>
+        <div class="input-wrapper">
+          <label> Password </label>
+          <input type="password" id="admin_password" required />
+        </div>
+        <div class="input-wrapper">
+          <button class="admin-login-btn">Login</button>
+        </div>
+      </form>
+    </main>
+
+    <script src="./../assets/js/admin_login.js"></script>
+  </body>
+</html>

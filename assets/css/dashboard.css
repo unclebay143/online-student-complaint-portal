@@ -1,0 +1,90 @@
+main {
+  display: flex;
+  height: 100%;
+  font-family: var(--app-primary--font);
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--app-primary-color);
+  font-family: var(--app-primary--font);
+  padding: 2rem 1rem;
+}
+.side-menu.open a {
+  display: inline;
+}
+.side-menu a {
+  color: var(--app-color-white);
+  padding: 1rem;
+  text-decoration: none;
+  display: none;
+}
+
+.side-menu a.active {
+  color: var(--app-tertiary-color);
+  font-weight: 600;
+}
+
+.side-menu a:hover {
+  color: var(--app-tertiary-color);
+}
+
+.dashboard {
+  padding: 3rem;
+  min-height: 100vh;
+  font-family: var(--app-primary--font);
+  width: 100%;
+}
+
+.dashboard h1 {
+  text-transform: capitalize;
+}
+
+.user-name-holder {
+  text-transform: capitalize;
+}
+
+.reasons-to-report {
+  margin-top: 3rem;
+}
+
+.reasons-to-report h1 {
+  margin: 1rem 0;
+  color: var(--app-tertiary-color);
+}
+
+.reasons-to-report ul li {
+  margin: 1rem 0;
+}
+
+@media (min-width: 900px) {
+  .dashboard h1 {
+    padding-left: 3rem;
+  }
+
+  .reasons-to-report h1 {
+    /* text-align: center; */
+  }
+
+  .reasons-to-report ul {
+    margin-top: 2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .reasons-to-report ul li {
+    background-color: var(--app-tertiary-color);
+    text-align: center;
+    color: var(--app-color-white);
+    padding: 2rem;
+    border-radius: 5px;
+    width: 50%;
+    margin: 1rem;
+  }
+
+  .side-menu a {
+    display: inline;
+  }
+}

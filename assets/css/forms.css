@@ -1,0 +1,101 @@
+.auth-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: var(--app-primary--font);
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 5rem 2rem 2.5rem;
+}
+
+.left-side i {
+  font-size: 2rem;
+}
+
+.left-side h1 {
+  padding-top: 2rem;
+  text-transform: uppercase;
+}
+
+.left-side .back-btn {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+form .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.input-wrapper label {
+  margin-bottom: 0.5rem;
+  font-size: 19px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-wrapper {
+  width: 80%;
+}
+
+.input-wrapper input,
+.input-wrapper button {
+  height: 3rem;
+  font-size: 19px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  padding: 0.6rem;
+}
+
+.input-wrapper button {
+  background-color: var(--app-primary-color);
+  border: none;
+  color: var(--app-color-white);
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  .auth-form-wrapper {
+    flex-direction: row;
+  }
+
+  .left-side {
+    background-color: var(--app-primary-color);
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5rem 2rem 2.5rem;
+
+    color: var(--app-color-white);
+  }
+
+  .form-wrapper {
+    width: 70%;
+  }
+
+  .input-wrapper {
+    width: 50%;
+  }
+}
